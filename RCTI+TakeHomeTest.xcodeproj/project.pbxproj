@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B4363662C06FFD000C13319 /* RCTI_TakeHomeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363652C06FFD000C13319 /* RCTI_TakeHomeTestApp.swift */; };
+		9B4363682C06FFD000C13319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363672C06FFD000C13319 /* ContentView.swift */; };
+		9B43636A2C06FFD200C13319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4363692C06FFD200C13319 /* Assets.xcassets */; };
+		9B43636D2C06FFD200C13319 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B43636C2C06FFD200C13319 /* Preview Assets.xcassets */; };
+		9B4363742C0717FF00C13319 /* VideoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363732C0717FF00C13319 /* VideoItemView.swift */; };
+		9B43637A2C071A6100C13319 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363792C071A6100C13319 /* Video.swift */; };
+		9B43637E2C0723EA00C13319 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B43637D2C0723EA00C13319 /* videos.json */; };
+		9B4363802C072DE800C13319 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43637F2C072DE800C13319 /* HomeView.swift */; };
+		9B4363842C07352800C13319 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363832C07352800C13319 /* FavoriteView.swift */; };
+		9B4363892C07383900C13319 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363882C07383900C13319 /* VideoViewModel.swift */; };
+		9B43638C2C07429900C13319 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B43638B2C07429900C13319 /* SDWebImageSwiftUI */; };
+		9B4363912C07475900C13319 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4363902C07475900C13319 /* VideoDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B4363622C06FFD000C13319 /* RCTI+TakeHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RCTI+TakeHomeTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4363652C06FFD000C13319 /* RCTI_TakeHomeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTI_TakeHomeTestApp.swift; sourceTree = "<group>"; };
+		9B4363672C06FFD000C13319 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B4363692C06FFD200C13319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B43636C2C06FFD200C13319 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B4363732C0717FF00C13319 /* VideoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemView.swift; sourceTree = "<group>"; };
+		9B4363792C071A6100C13319 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9B43637D2C0723EA00C13319 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		9B43637F2C072DE800C13319 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9B4363832C07352800C13319 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		9B4363882C07383900C13319 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		9B4363902C07475900C13319 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		9B4363922C07537300C13319 /* RCTI-TakeHomeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RCTI-TakeHomeTest-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B43635F2C06FFD000C13319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B43638C2C07429900C13319 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B4363592C06FFD000C13319 = {
+			isa = PBXGroup;
+			children = (
+				9B4363642C06FFD000C13319 /* RCTI+TakeHomeTest */,
+				9B4363632C06FFD000C13319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B4363632C06FFD000C13319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B4363622C06FFD000C13319 /* RCTI+TakeHomeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B4363642C06FFD000C13319 /* RCTI+TakeHomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				9B4363922C07537300C13319 /* RCTI-TakeHomeTest-Info.plist */,
+				9B4363652C06FFD000C13319 /* RCTI_TakeHomeTestApp.swift */,
+				9B4363872C0737C600C13319 /* Model */,
+				9B4363852C07379700C13319 /* View */,
+				9B4363862C0737B600C13319 /* Components */,
+				9B43638F2C0742F900C13319 /* ViewModel */,
+				9B4363692C06FFD200C13319 /* Assets.xcassets */,
+				9B43636B2C06FFD200C13319 /* Preview Content */,
+			);
+			path = "RCTI+TakeHomeTest";
+			sourceTree = "<group>";
+		};
+		9B43636B2C06FFD200C13319 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9B43637D2C0723EA00C13319 /* videos.json */,
+				9B43636C2C06FFD200C13319 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B4363852C07379700C13319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B4363672C06FFD000C13319 /* ContentView.swift */,
+				9B4363832C07352800C13319 /* FavoriteView.swift */,
+				9B43637F2C072DE800C13319 /* HomeView.swift */,
+				9B4363902C07475900C13319 /* VideoDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B4363862C0737B600C13319 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9B4363732C0717FF00C13319 /* VideoItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9B4363872C0737C600C13319 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B4363792C071A6100C13319 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B43638F2C0742F900C13319 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B4363882C07383900C13319 /* VideoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B4363612C06FFD000C13319 /* RCTI+TakeHomeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4363702C06FFD200C13319 /* Build configuration list for PBXNativeTarget "RCTI+TakeHomeTest" */;
+			buildPhases = (
+				9B43635E2C06FFD000C13319 /* Sources */,
+				9B43635F2C06FFD000C13319 /* Frameworks */,
+				9B4363602C06FFD000C13319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RCTI+TakeHomeTest";
+			packageProductDependencies = (
+				9B43638B2C07429900C13319 /* SDWebImageSwiftUI */,
+			);
+			productName = "RCTI+TakeHomeTest";
+			productReference = 9B4363622C06FFD000C13319 /* RCTI+TakeHomeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B43635A2C06FFD000C13319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					9B4363612C06FFD000C13319 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B43635D2C06FFD000C13319 /* Build configuration list for PBXProject "RCTI+TakeHomeTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B4363592C06FFD000C13319;
+			packageReferences = (
+				9B43638A2C07429900C13319 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 9B4363632C06FFD000C13319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B4363612C06FFD000C13319 /* RCTI+TakeHomeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B4363602C06FFD000C13319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B43636D2C06FFD200C13319 /* Preview Assets.xcassets in Resources */,
+				9B43636A2C06FFD200C13319 /* Assets.xcassets in Resources */,
+				9B43637E2C0723EA00C13319 /* videos.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B43635E2C06FFD000C13319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4363682C06FFD000C13319 /* ContentView.swift in Sources */,
+				9B43637A2C071A6100C13319 /* Video.swift in Sources */,
+				9B4363892C07383900C13319 /* VideoViewModel.swift in Sources */,
+				9B4363842C07352800C13319 /* FavoriteView.swift in Sources */,
+				9B4363742C0717FF00C13319 /* VideoItemView.swift in Sources */,
+				9B4363802C072DE800C13319 /* HomeView.swift in Sources */,
+				9B4363662C06FFD000C13319 /* RCTI_TakeHomeTestApp.swift in Sources */,
+				9B4363912C07475900C13319 /* VideoDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9B43636E2C06FFD200C13319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B43636F2C06FFD200C13319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B4363712C06FFD200C13319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RCTI+TakeHomeTest/Preview Content\"";
+				DEVELOPMENT_TEAM = KCXWQSNV6P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RCTI-TakeHomeTest-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.areez.RCTI-TakeHomeTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B4363722C06FFD200C13319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RCTI+TakeHomeTest/Preview Content\"";
+				DEVELOPMENT_TEAM = KCXWQSNV6P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RCTI-TakeHomeTest-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.areez.RCTI-TakeHomeTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B43635D2C06FFD000C13319 /* Build configuration list for PBXProject "RCTI+TakeHomeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B43636E2C06FFD200C13319 /* Debug */,
+				9B43636F2C06FFD200C13319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4363702C06FFD200C13319 /* Build configuration list for PBXNativeTarget "RCTI+TakeHomeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4363712C06FFD200C13319 /* Debug */,
+				9B4363722C06FFD200C13319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B43638A2C07429900C13319 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B43638B2C07429900C13319 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B43638A2C07429900C13319 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9B43635A2C06FFD000C13319 /* Project object */;
+}
