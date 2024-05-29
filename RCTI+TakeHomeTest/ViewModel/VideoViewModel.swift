@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import CoreData
 
 class VideoViewModel: ObservableObject {
     @Published var videos: [Video] = []
+    private let moc: NSManagedObjectContext
     
+    init(moc: NSManagedObjectContext) {
+        self.moc = moc
+    }
+
     func fetchData() async throws {
         let endPoint = "https://gist.github.com/poudyalanil/ca84582cbeb4fc123a13290a586da925/raw/videos.json"
         
@@ -34,6 +40,18 @@ class VideoViewModel: ObservableObject {
             }
         } catch {
             print(ErrorResponse.invalidData)
+        }
+    }
+    
+    func addToFavorite(id: String, vidTitle: String) {
+        let newFavorite = FavoriteVideos(context: moc)
+        newFavorite.id = id
+        newFavorite.title = vidTitle
+        
+        do {
+            try moc.save()
+        } catch {
+            print("Failed to save favorite video: \(error.localizedDescription)")
         }
     }
 }

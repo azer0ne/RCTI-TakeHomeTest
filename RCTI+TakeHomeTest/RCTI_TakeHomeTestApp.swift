@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RCTI_TakeHomeTestApp: App {
+    let dataController = DataController.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Video: Identifiable, Codable {
+struct Video: Identifiable, Codable, Hashable{
     let id: String
     let title: String
     let thumbnailUrl: String

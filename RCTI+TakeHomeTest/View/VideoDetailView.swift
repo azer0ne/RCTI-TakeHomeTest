@@ -10,7 +10,14 @@ import AVKit
 
 struct VideoDetailView: View {
     let video: Video
+    @ObservedObject var viewModel: VideoViewModel
     @State private var player = AVPlayer()
+    @State private var isBookmarked = false
+    
+    init(video: Video, viewModel: VideoViewModel) {
+        self.video = video
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -30,11 +37,21 @@ struct VideoDetailView: View {
                     .font(.subheadline)
                     .padding(.bottom, 5)
                 
-                Spacer()
+                Divider()
+                    .frame(height: 20)
                 
                 Text(video.uploadTime)
                     .font(.subheadline)
                     .padding(.bottom, 5)
+                
+                Spacer()
+                
+                Button(action: {
+                    viewModel.addToFavorite(id: video.id, vidTitle: video.title)
+                    isBookmarked.toggle()
+                }, label: {
+                    Image(systemName: isBookmarked ? "bookmark.fill" : "bookmark")
+                })
             }
             
             Text(video.author)
@@ -48,17 +65,4 @@ struct VideoDetailView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    VideoDetailView(video: Video(id: "2",
-                                 title: "The first Blender Open Movie from 2006",
-                                 thumbnailUrl: "https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp",
-                                 duration: "8:18",
-                                 uploadTime: "May 9, 2011",
-                                 views: "24,969,123",
-                                 author: "Blender Inc.",
-                                 videoUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-                                 description: "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
-                                 subscriber: "25254545 Subscribers"))
 }

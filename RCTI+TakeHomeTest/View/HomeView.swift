@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject private var viewModel = VideoViewModel()
+    @Environment(\.managedObjectContext) private var moc
+    @StateObject private var viewModel = VideoViewModel(moc: DataController.shared.container.viewContext)
 
     var body: some View {
         NavigationView {
@@ -16,7 +17,7 @@ struct HomeView: View {
                 LazyVStack {
                     ForEach(viewModel.videos) { video in
                         NavigationLink(
-                            destination: VideoDetailView(video: video),
+                            destination: VideoDetailView(video: video, viewModel: viewModel),
                             label: {
                                 VideoItemView(video: video)
                                     .padding(.vertical, 10)
@@ -31,10 +32,7 @@ struct HomeView: View {
                     }
                 }
             }
+            .navigationTitle("Home")
         }
     }
 }
-
-//#Preview {
-//    HomeView(video: VideoViewModel.placeholders)
-//}
